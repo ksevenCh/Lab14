@@ -37,6 +37,20 @@ begin
   writelnformat('Ближе к новому году дата {0}.{1}', resday, resmonth);
 end;
 
+function DaysInYear(a : integer) : integer;
+begin
+  if IsLeapYear(a) then result := 366 else Result := 365;
+end;
+
+function DaysInYearRange (a, b : integer) : integer;
+begin
+  for var i := a to b do
+    begin
+      result += DaysInYear(i);
+    end;
+end;
+
+
 begin
   
 end.
