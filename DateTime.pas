@@ -50,6 +50,10 @@ begin
     end;
 end;
 
+function secondsinhours(a : integer) : integer;
+begin
+  result := a * 3600;
+end;
 
 begin
   
