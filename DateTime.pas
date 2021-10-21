@@ -50,6 +50,15 @@ begin
     end;
 end;
 
+function secondsinhours(a : integer) : integer;
+begin
+  result := a * 3600;
+end;
+
+function IsYearOfApocalypse(a : integer) : boolean;
+begin
+  if (a = 1992) or (a = 2005) or (a = 2011) then result := True else result := False; 
+end;
 
 begin
   
